@@ -16,16 +16,3 @@ for i=1:len
 
 end
 save s1_unionData.mat s1_unionData
-
-uwb_data=sync_uwb_sig.data{3,1}(178,:);
-uwb_temp = [1:length(uwb_data)]; % [1:uwb_data filtering data의 길이] 벡터 생성
-time_uwb = uwb_temp/uwb_fs;
-
-union_temp=[1:length(uwb_unionData)];
-time_union=union_temp/uwb_fs;
-
-figure; % 디폴트 Figure를 생성
-subplot(211);
-plot(time_union, uwb_unionData); axis tight; title('uwb signal, union data'); xlabel('Time (s)');
-subplot(212);
-plot(time_uwb, uwb_data); axis tight; title('uwb signal, 178 index'); xlabel('Time (s)');
