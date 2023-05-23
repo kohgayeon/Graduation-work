@@ -8,3 +8,9 @@
 total | N1+N2 | N3 | wake | REM
 --- | --- | --- | --- | --- 
 55.906% | 72.301% | 24.436% | 51.087% | 32.476%
+
+### 수면데이터 전처리 과정
+### 1. 모든 subject 데이터를 합쳐서 normalize 수행
+### 2. 다시 subject 별로 데이터를 분할
+### 3. dynamic threshold를 사용
+### 4. dataPreprocessing.m 파일을 사용해 CWT 이미지화 수행
